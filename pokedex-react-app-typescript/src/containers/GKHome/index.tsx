@@ -68,8 +68,8 @@ class GKHome extends Component<GKHomePorps, GKHomeState> {
     }): []
     return (
       <div className="gk-home">
-        <Grid container spacing={2}>
-          <Grid container item lg={3} md={3} xs={12}>
+        <Grid container spacing={2} justify='center' alignItems='center'  className="gk-home-search">
+          <Grid container item lg={8} md={8} xs={12}>
             <GKSearch 
               onSearchChange={(e: any) => this.onSearchChange(e.target.value)}
               searchField={searchField ? searchField: ''}

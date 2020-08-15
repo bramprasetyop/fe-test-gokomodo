@@ -1,5 +1,5 @@
 .gk-home {
-  padding: 32px;
+  padding: 0 32px;
 
   h2 {
     text-transform: capitalize;
@@ -15,7 +15,12 @@
       font-size: 50px;
       margin: 0;
     }
-  } 
+  }
+
+  &-search {
+    padding: 32px 0;
+  }
+
   &--not-found {
     display: flex;
     justify-content: center;
@@ -23,7 +28,7 @@
     width: 75%;
     height: 25%;
     border: 1px solid darkgray;
-    background: darkgray;
+    background: #fafafa;
     opacity: 0.7;
     border-radius: 2px;
     margin: 24px;
@@ -38,7 +43,8 @@
       display: none;
     }
     .MuiFormControl-root {
-      h2 {
+      h2,
+      hr {
         display: none;
       }
     }

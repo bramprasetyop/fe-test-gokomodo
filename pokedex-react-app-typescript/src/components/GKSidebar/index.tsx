@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Grid, FormControl, RadioGroup, FormControlLabel, Radio } from '@material-ui/core'
 import { getDetailPokemonTypes } from '../../actions/index'
+import './styles.scss'
 
 interface GKSidebarPorps {
   pokemonTypes?: {
@@ -23,8 +24,9 @@ class GKSidebar extends Component<GKSidebarPorps> {
     return (
       <React.Fragment>
         <Grid container item lg={3} md={3} sm={3}>
-          <FormControl component="fieldset">
+          <FormControl component="fieldset" className="gk-sidebar">
             <h2>Types</h2>
+            <hr/>
             <RadioGroup aria-label="types" name="pokemon_types" /* onChange={this.handleChange} */>
               {
                 pokemonTypes ? pokemonTypes.map((type, i) => {

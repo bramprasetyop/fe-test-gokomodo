@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core'
 import ImageError from '../../assets/image/image-error.png';
+import './styles.scss'
 
 interface GKCardProps {
   name: string,
@@ -17,7 +18,7 @@ class WPCard extends Component<GKCardProps> {
   render() {
     const { name, id, toggleModal } = this.props
     return (
-      <div onClick={toggleModal}>
+      <div onClick={toggleModal} className="gk-card">
         <Card>
           <CardActionArea>
             <CardMedia
