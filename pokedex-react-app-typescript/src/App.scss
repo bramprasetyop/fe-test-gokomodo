@@ -1,0 +1,6 @@
+.gk-app{
+  padding: 32px;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
