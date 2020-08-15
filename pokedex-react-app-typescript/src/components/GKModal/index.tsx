@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import axios from 'axios';
 import { Modal, Grid, Chip } from '@material-ui/core';
 import './styles.scss'
 import ImageError from '../../assets/image/image-error.png';
